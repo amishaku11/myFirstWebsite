@@ -1,0 +1,573 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: #f5f2e9; 
+    color: #3c2f2f;            
+}
+
+header {
+    background-color: rgba(74, 124, 89, 0.7); 
+    color: #fff9f0;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav a {
+    color: #fff9f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:active {
+    color: #c87f42; 
+}
+
+button {
+    background-color: #4a7c59;
+    color: #fff9f0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #c87f42;
+}
+
+i {
+    color: #4a7c59;
+    margin-right: 6px;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: #c87f42;
+}
+
+footer {
+    background-color: #3c2f2f;
+    color: #f5f2e9;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+
+.indexka {
+    background-image: url("imagess/bgdino.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 80vh;
+    padding: 150px 20px 50px 20px;
+    text-align: center;
+    color: #fff9f0;
+}
+
+.indexka::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.indexka h2,
+.indexka p {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.indexka h2 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.indexka p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.about-page .about-marquee {
+    background-color: rgba(74, 124, 89, 0.1);
+    padding: 20px 0;
+}
+
+.about-page .about-marquee marquee {
+    display: block;
+}
+
+.about-page .about-marquee img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.about-page .about-marquee img:hover {
+    transform: scale(1.08);
+}
+
+.about-page .about-text {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    height:fit-content;
+    color: #3c2f2f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-page .about-text h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.about-page .about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.typepage .typesofdinosaurs h2{
+     text-align:left;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    height:fit-content;
+    color: #3c2f2f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.typepage .typesofdinosaurs h3{
+     text-align:start;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    height:fit-content;
+    color: #0e0101;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+.typepage .typesofdinosaurs p{
+     text-align: justify;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    height:fit-content;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+.famous1 {
+  color: #3b2f2f;        
+  background-color: #f9e4b7; 
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+.famous .hoverimage1 {
+  position: relative;
+  display:flex;
+  width: 400px;
+}
+
+.famous .hoverimage1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.famous .hovertext1 {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Show text on hover */
+.famous .hoverimage1:hover .hovertext1 {
+  opacity: 1;
+}
+.famous .hoverimage2 {
+  position: relative;
+  display:flex;
+  width: 400px;
+}
+
+.famous .hoverimage2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.famous .hovertext2 {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Show text on hover */
+.famous .hoverimage2:hover .hovertext2 {
+  opacity: 1;}
+
+
+
+.famous .hoverimage3 {
+  position: relative;
+  display:flex;
+  width: 400px;
+}
+
+.famous .hoverimage3 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.famous .hovertext3 {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Show text on hover */
+.famous .hoverimage3:hover .hovertext3{
+  opacity: 1;}
+  
+  
+
+
+.famous .hoverimage4 {
+  position: relative;
+  display:flex;
+  width: 400px;
+}
+
+.famous .hoverimage4 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.famous .hovertext4 {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Show text on hover */
+.famous .hoverimage4:hover .hovertext4 {
+  opacity: 1;}
+
+  
+
+.famous .hoverimage5 {
+  position: relative;
+  display:flex;
+  width: 400px;
+}
+
+.famous .hoverimage5 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.famous .hovertext5 {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Show text on hover */
+.famous .hoverimage5:hover .hovertext5 {
+  opacity: 1;}
+
+  
+.famous .hoverimage6 {
+  position: relative;
+  display:flex;
+  width: 400px;
+}
+
+.famous .hoverimage6 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.famous .hovertext6 {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.famous .hoverimage6:hover .hovertext6 {
+  opacity: 1;}
+
+
+
+
+
+
+
+
+
+
+body.movie h1 {
+    font-size: 3rem;      
+    text-align: center;
+    margin: 20px 0;
+}
+
+body.movie h2 {
+    font-size: 2.5rem;     
+    margin: 20px 0 10px 0;
+}
+
+body.movie h3 {
+    font-size: 1.8rem;    
+    margin: 15px 0 5px 0;
+}
+
+/* Paragraphs */
+body.movie p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+.movie .hoverimage {
+    position: relative;
+    display: flex;
+    width: 300px;         
+    margin-bottom: 20px;
+}
+
+.movie .hoverimage img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Hover Text */
+.movie .hovertext {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;}
+
+main.dino {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.extmarquee .extmarquee {
+    background-color: rgba(74, 124, 89, 0.1);
+    padding: 20px 0;
+}
+
+.extmarquee .extmarquee marquee {
+    display: block;
+}
+
+.extmarquee .extmarquee img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.extmarquee .extmarquee img:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+.factspage {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3; 
+    color: #333;
+}
+
+
+.factspage main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+.factspage h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.factspage h3.facts {
+    font-size: 1.5em;
+    color: #e67e22;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+.factspage p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.factspage .fact-list {
+    list-style-type: square;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.factspage .fact-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+
+.factspage form {
+    background-color: #f7f3e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.factspage form label {
+    font-weight: bold;
+}
+
+.factspage form input[type="text"],
+.factspage form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;}
+
+
+
+
+
+
+/* =======================
+   4️⃣ Responsive Design
+======================= */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .about-page .about-marquee img {
+        width: 80%;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    .about-page .about-text h2 {
+        font-size: 2em;
+    }
+    .about-page .about-text p {
+        font-size: 1.1em;
+    }
+
+    .indexka h2 {
+        font-size: 2em;
+    }
+    .indexka p {
+        font-size: 1.1em;
+    }
+}
